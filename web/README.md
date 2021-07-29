@@ -14,7 +14,9 @@ npm run dev
 
 ## Prepare for deploy
 
-Create `serverless.yml` .
+This repository uses [serverless library](https://www.serverless.com/plugins/serverless-nextjs-plugin).  
+First, setup AWS CLI in your local environment.  
+Next, Create `serverless.yml` .
 
 ```yml
 myWebApplication:
@@ -26,3 +28,10 @@ myWebApplication:
 ```
 npm run serverless
 ```
+
+Then the following services will be created in your AWS account.  
+
+- CloudFront
+- S3
+- Lambda
+- IAM
