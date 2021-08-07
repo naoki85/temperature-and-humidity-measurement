@@ -87,12 +87,14 @@ const LineChart = ({ logs }: Props) => {
       {
         name: '気温',
         data: temperature,
-        pointPlacement: 'on'
+        pointPlacement: 'on',
+        color: '#ff3300'
       },
       {
         name: '湿度',
         data: humidity,
-        pointPlacement: 'on'
+        pointPlacement: 'on',
+        color: '#33ccff'
       }
     ],
 
